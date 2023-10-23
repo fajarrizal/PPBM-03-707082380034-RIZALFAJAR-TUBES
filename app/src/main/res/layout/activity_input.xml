@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvas"
+    android:orientation="vertical"
+    tools:context=".Input">
+
+    <RelativeLayout
+        android:id="@+id/Input_header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+
+        <ImageView
+            android:id="@+id/link_back_home3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/red_hat_font_family"
+            android:textFontWeight="600"
+            android:textSize="22sp"
+            android:textColor="@color/dark"
+            android:text="@string/title_input"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="700"
+                    android:textSize="28sp"
+                    android:textColor="@color/dark"
+                    android:text="Fill The Form"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="500"
+                    android:textSize="18sp"
+                    android:textColor="@color/placeholder"
+                    android:text="Please fill the form below"/>
+            </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                android:text="Logistic Code (auto generate)"
+                android:textColor="@color/dark"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="text"
+                android:id="@+id/code"
+                android:hint="#GDS45866134512"
+                android:textColorHint="@color/placeholder"
+                android:textSize="14sp"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="400"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:background="@drawable/et_style"
+                android:enabled="false"/>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:viewBindingIgnore="true">
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                android:text="Company"
+                android:textColor="@color/dark"
+                android:layout_marginBottom="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_company"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="400"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/spinner_theme"
+                android:spinnerMode="dropdown"
+                android:dropDownVerticalOffset="52dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                android:text="Person In Charge"
+                android:textColor="@color/dark"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="text"
+                android:id="@+id/pic"
+                android:hint="Input name"
+                android:textColorHint="@color/placeholder"
+                android:textSize="14sp"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="400"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:background="@drawable/et_style"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_complaint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                android:text="Any Complaint from Client?"
+                android:textColor="@color/dark"
+                android:layout_marginBottom="8dp"/>
+
+           <RadioGroup
+               android:id="@+id/r_group"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <RadioButton
+                   android:id="@+id/r_btn_yes"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/red_hat_font_family"
+                   android:textFontWeight="500"
+                   android:textColor="@color/dark"
+                   android:text="Yes"/>
+
+                   <RadioButton
+                       android:id="@+id/r_btn_no"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/red_hat_font_family"
+                       android:textFontWeight="500"
+                       android:textColor="@color/dark"
+                       android:text="No"/>
+           </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                android:text="Describe it, if YES"
+                android:textColor="@color/dark"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:inputType="text"
+                android:id="@+id/describe"
+                android:hint="..."
+                android:textColorHint="@color/placeholder"
+                android:textColorHighlight="@color/dark"
+                android:textSize="14sp"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="400"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:background="@drawable/et_style"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Attachment"
+            android:fontFamily="@font/red_hat_font_family"
+            android:textFontWeight="600"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_style"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_home"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/hint_submit_regis"
+                android:textColorHint="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="500"
+                android:background="@drawable/btn_style"
+                android:layout_marginBottom="18dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Defined a new style with three items of color. -->
+    <style name="DemoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Theme. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="statusBarBackground">@color/dark</item>
+    </style>
+</resources>

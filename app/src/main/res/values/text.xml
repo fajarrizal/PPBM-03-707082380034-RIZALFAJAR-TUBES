@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_login">Welcome Back!</string>
+    <string name="title_regis">Sign Up</string>
+    <string name="body_login">You’ve been missed, Please sign in your account </string>
+    <string name="body_regis">Create your account</string>
+    <string name="description_image">logo goods</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_pass">Password</string>
+    <string name="hint_confirm_pass">Confirm Password</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_regis">Sign Up</string>
+    <string name="hint_submit_regis">Submit</string>
+    <string name="hint_back_login">Back to Login</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_photos">Photos</string>
+    <string name="title_about">About</string>
+    <string name="title_language">Language</string>
+    <string name="title_evaluation">Evaluation</string>
+    <string name="title_input">Input</string>
+    <string name="hint_edit_profile">Edit</string>
+    <string name="name_profile">Samuel</string>
+    <string name="email_profile">samuelj78@gmail.com</string>
+    <string name="hint_logout">Logout</string>
+    <string name="indicator_header">ASSESSMENT 1</string>
+    <string name="banner_home_title">Welcome Back, Samuel</string>
+    <string name="banner_home_body">Lets track your progress!</string>
+    <string name="home_input">Input</string>
+    <string name="home_photos">Photos</string>
+    <string name="home_evaluation">Evaluation</string>
+    <string name="home_about">About</string>
+    <string name="subtitle_recent_input">Recent Input</string>
+    <string name="subtitle_indicator_month_recent_input">Oct 2023</string>
+    <string name="title_company_ri_1">PT RAJAWALI DIGITAL</string>
+    <string name="title_company_ri_2">PT CEGAH RUGI</string>
+    <string name="title_company_ri_3">PT CAKRAWALA DUNIA</string>
+    <string name="title_company_ri_4">PT GA BAKAL KEMALINGAN</string>
+
+</resources>

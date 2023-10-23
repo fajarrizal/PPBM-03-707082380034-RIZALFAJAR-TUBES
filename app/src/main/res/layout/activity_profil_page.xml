@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvas"
+    tools:context=".Profil_page">
+
+    <RelativeLayout
+        android:id="@+id/profile_header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+
+        <ImageView
+            android:id="@+id/link_back_home"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/red_hat_font_family"
+            android:textFontWeight="600"
+            android:textSize="22sp"
+            android:textColor="@color/dark"
+            android:text="@string/title_profile"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_card"
+        android:layout_below="@+id/profile_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_profile"
+            android:paddingTop="14dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp">
+
+           <androidx.appcompat.widget.AppCompatButton
+               android:id="@+id/edit_profile"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:hint="@string/hint_edit_profile"
+               android:textColorHint="@color/white"
+               android:textSize="16sp"
+               android:fontFamily="@font/red_hat_font_family"
+               android:textFontWeight="600"
+               android:background="@drawable/btn_style"
+               android:layout_gravity="end"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/avatar_image"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_profile"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="700"
+                android:textSize="28dp"
+                android:textColor="@color/dark"
+                android:textAlignment="center"
+                android:layout_marginBottom="2dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/info_user_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New York"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="500"
+                    android:textSize="12dp"
+                    android:textColor="@color/primary"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/info_user_devider"
+                    android:layout_toEndOf="@id/info_user_location"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="500"
+                    android:textSize="12dp"
+                    android:textColor="@color/placeholder"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/info_user_joined"
+                    android:layout_toEndOf="@id/info_user_devider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Joined Aug 2023"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="500"
+                    android:textSize="12dp"
+                    android:textColor="@color/placeholder"
+                    android:textAlignment="center"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/user_information"
+        android:layout_below="@id/user_card"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Information"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textSize="20sp"
+                android:textFontWeight="600"
+                android:layout_weight="1"
+                android:textColor="@color/dark"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textSize="16sp"
+                android:textFontWeight="600"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:textColor="@color/placeholder"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email_profile"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textSize="16sp"
+                android:textFontWeight="600"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:textColor="@color/dark"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textSize="16sp"
+                android:textFontWeight="600"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:textColor="@color/placeholder"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:fontFamily="@font/red_hat_font_family"
+                android:text="347-461-5725"
+                android:textAlignment="textEnd"
+                android:textColor="@color/dark"
+                android:textFontWeight="600"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work Area"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textSize="16sp"
+                android:textFontWeight="600"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:textColor="@color/placeholder"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:fontFamily="@font/red_hat_font_family"
+                android:text="New York"
+                android:textAlignment="textEnd"
+                android:textColor="@color/dark"
+                android:textFontWeight="600"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textSize="16sp"
+                android:textFontWeight="600"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:textColor="@color/placeholder"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:fontFamily="@font/red_hat_font_family"
+                android:text="Driver"
+                android:textAlignment="textEnd"
+                android:textColor="@color/dark"
+                android:textFontWeight="600"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:fontFamily="@font/red_hat_font_family"
+                android:text="Joined"
+                android:textAlignment="textStart"
+                android:textColor="@color/placeholder"
+                android:textFontWeight="600"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:fontFamily="@font/red_hat_font_family"
+                android:text="01 August, 2023"
+                android:textAlignment="textEnd"
+                android:textColor="@color/dark"
+                android:textFontWeight="600"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="@string/hint_logout"
+            android:fontFamily="@font/red_hat_font_family"
+            android:textFontWeight="600"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/btn_style"/>
+
+    </LinearLayout>
+</RelativeLayout>

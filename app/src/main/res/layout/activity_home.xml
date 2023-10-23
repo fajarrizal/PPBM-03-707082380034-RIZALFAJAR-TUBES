@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvas"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:id="@+id/header_home"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:elevation="6dp">
+
+        <ImageView
+            android:id="@+id/logo_header_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:src="@drawable/goods_logo_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/red_hat_font_family"
+            android:text="@string/indicator_header"
+            android:textFontWeight="700"
+            android:textSize="14sp"
+            android:textColor="@color/dark"/>
+    </RelativeLayout>
+          <ScrollView
+            android:layout_marginTop="56dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+              android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/first_row_home"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/btn_style_3">
+
+                    <ImageView
+                        android:id="@+id/link_language"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_us_flag"/>
+                </RelativeLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_link"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/avatar_image"
+                    app:civ_border_color="@color/primary"
+                    app:civ_border_width="4dp"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/banner_home">
+
+                    <TextView
+                        android:id="@+id/banner_title_home"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/banner_home_title"
+                        android:fontFamily="@font/red_hat_font_family"
+                        android:textSize="24sp"
+                        android:textFontWeight="600"
+                        android:textColor="@color/white"
+                        />
+                    <TextView
+                        android:id="@+id/banner_body_home"
+                        android:layout_below="@id/banner_title_home"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/banner_home_body"
+                        android:fontFamily="@font/red_hat_font_family"
+                        android:textSize="14sp"
+                        android:textFontWeight="400"
+                        android:textColor="@color/white"
+                        />
+
+                </RelativeLayout>
+                
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    
+                    <RelativeLayout
+                        android:id="@+id/input_button_home"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_input_indicator"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:src="@drawable/ic_input"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"/>
+
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:layout_below="@id/img_input_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home_input"
+                            android:fontFamily="@font/red_hat_font_family"
+                            android:textSize="14sp"
+                            android:textFontWeight="500"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark"/>
+
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/input_button_photos"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_photos_indicator"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:src="@drawable/ic_photos"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"/>
+
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:layout_below="@id/img_photos_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home_photos"
+                            android:fontFamily="@font/red_hat_font_family"
+                            android:textSize="14sp"
+                            android:textFontWeight="500"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark"/>
+
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/input_evaluation_home"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_evaluation_indicator"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:src="@drawable/ic_evaluation"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"/>
+
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:layout_below="@id/img_evaluation_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home_evaluation"
+                            android:fontFamily="@font/red_hat_font_family"
+                            android:textSize="14sp"
+                            android:textFontWeight="500"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark"/>
+
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/input_overview_home"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_overview_indicator"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:src="@drawable/ic_overview"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"/>
+
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:layout_below="@id/img_overview_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home_about"
+                            android:fontFamily="@font/red_hat_font_family"
+                            android:textSize="14sp"
+                            android:textFontWeight="500"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark"/>
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtitle_recent_input"
+                        android:fontFamily="@font/red_hat_font_family"
+                        android:textSize="20sp"
+                        android:textFontWeight="600"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        android:textColor="@color/dark"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtitle_indicator_month_recent_input"
+                        android:fontFamily="@font/red_hat_font_family"
+                        android:textSize="14sp"
+                        android:textFontWeight="500"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:textColor="@color/placeholder"/>
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/recent_input_1"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_edit_text"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/img_ri_1"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/image_ri_1"/>
+
+                                <LinearLayout
+                                    android:layout_toEndOf="@+id/img_ri_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerInParent="true">
+
+                                    <TextView
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_company_ri_1"
+                                        android:fontFamily="@font/red_hat_font_family"
+                                        android:textColor="@color/dark"
+                                        android:textSize="14sp"
+                                        android:textFontWeight="500"/>
+
+                                    <TextView
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="#GDS77822135512"
+                                        android:fontFamily="@font/red_hat_font_family"
+                                        android:textColor="@color/placeholder"
+                                        android:textSize="12sp"
+                                        android:textFontWeight="500"/>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_weight="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="20/10/2023"
+                                    android:fontFamily="@font/red_hat_font_family"
+                                    android:textColor="@color/placeholder"
+                                    android:textSize="12sp"
+                                    android:textFontWeight="500"
+                                    android:layout_centerInParent="true"/>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/recent_input_2"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_edit_text"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/img_ri_2"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/image_ri_2"/>
+
+                                <LinearLayout
+                                    android:layout_toEndOf="@+id/img_ri_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerInParent="true">
+
+                                    <TextView
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_company_ri_2"
+                                        android:fontFamily="@font/red_hat_font_family"
+                                        android:textColor="@color/dark"
+                                        android:textSize="14sp"
+                                        android:textFontWeight="500"/>
+
+                                    <TextView
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="#GDS77822132212"
+                                        android:fontFamily="@font/red_hat_font_family"
+                                        android:textColor="@color/placeholder"
+                                        android:textSize="12sp"
+                                        android:textFontWeight="500"/>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_weight="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="14/10/2023"
+                                    android:fontFamily="@font/red_hat_font_family"
+                                    android:textColor="@color/placeholder"
+                                    android:textSize="12sp"
+                                    android:textFontWeight="500"
+                                    android:layout_centerInParent="true"/>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/recent_input_3"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_edit_text"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/img_ri_3"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/image_ri_3"/>
+
+                                <LinearLayout
+                                    android:layout_toEndOf="@+id/img_ri_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerInParent="true">
+
+                                    <TextView
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_company_ri_3"
+                                        android:fontFamily="@font/red_hat_font_family"
+                                        android:textColor="@color/dark"
+                                        android:textSize="14sp"
+                                        android:textFontWeight="500"/>
+
+                                    <TextView
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="#GDS77822150111"
+                                        android:fontFamily="@font/red_hat_font_family"
+                                        android:textColor="@color/placeholder"
+                                        android:textSize="12sp"
+                                        android:textFontWeight="500"/>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_weight="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="12/10/2023"
+                                    android:fontFamily="@font/red_hat_font_family"
+                                    android:textColor="@color/placeholder"
+                                    android:textSize="12sp"
+                                    android:textFontWeight="500"
+                                    android:layout_centerInParent="true"/>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/recent_input_4"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_edit_text"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/img_ri_4"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/image_ri_4"/>
+
+                                <LinearLayout
+                                    android:layout_toEndOf="@+id/img_ri_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerInParent="true">
+
+                                    <TextView
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_company_ri_4"
+                                        android:fontFamily="@font/red_hat_font_family"
+                                        android:textColor="@color/dark"
+                                        android:textSize="14sp"
+                                        android:textFontWeight="500"/>
+
+                                    <TextView
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="#GDS77822140711"
+                                        android:fontFamily="@font/red_hat_font_family"
+                                        android:textColor="@color/placeholder"
+                                        android:textSize="12sp"
+                                        android:textFontWeight="500"/>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_weight="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10/10/2023"
+                                    android:fontFamily="@font/red_hat_font_family"
+                                    android:textColor="@color/placeholder"
+                                    android:textSize="12sp"
+                                    android:textFontWeight="500"
+                                    android:layout_centerInParent="true"/>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/recent_input_5"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_edit_text"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/img_ri_5"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/image_ri_1"/>
+
+                                <LinearLayout
+                                    android:layout_toEndOf="@+id/img_ri_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerInParent="true">
+
+                                    <TextView
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_company_ri_2"
+                                        android:fontFamily="@font/red_hat_font_family"
+                                        android:textColor="@color/dark"
+                                        android:textSize="14sp"
+                                        android:textFontWeight="500"/>
+
+                                    <TextView
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="#GDS77822167831"
+                                        android:fontFamily="@font/red_hat_font_family"
+                                        android:textColor="@color/placeholder"
+                                        android:textSize="12sp"
+                                        android:textFontWeight="500"/>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_weight="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="02/10/2023"
+                                    android:fontFamily="@font/red_hat_font_family"
+                                    android:textColor="@color/placeholder"
+                                    android:textSize="12sp"
+                                    android:textFontWeight="500"
+                                    android:layout_centerInParent="true"/>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/recent_input_6"
+                            android:layout_marginTop="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/bg_edit_text"
+                                android:orientation="horizontal"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp">
+
+                                <RelativeLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/img_ri_6"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/image_ri_1"/>
+
+                                    <LinearLayout
+                                        android:layout_toEndOf="@+id/img_ri_6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_centerInParent="true">
+
+                                        <TextView
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/title_company_ri_3"
+                                            android:fontFamily="@font/red_hat_font_family"
+                                            android:textColor="@color/dark"
+                                            android:textSize="14sp"
+                                            android:textFontWeight="500"/>
+
+                                        <TextView
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="#GDS778221608762"
+                                            android:fontFamily="@font/red_hat_font_family"
+                                            android:textColor="@color/placeholder"
+                                            android:textSize="12sp"
+                                            android:textFontWeight="500"/>
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_weight="3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="01/10/2023"
+                                        android:fontFamily="@font/red_hat_font_family"
+                                        android:textColor="@color/placeholder"
+                                        android:textSize="12sp"
+                                        android:textFontWeight="500"
+                                        android:layout_centerInParent="true"/>
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/recent_input_7"
+                            android:layout_marginTop="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/bg_edit_text"
+                                android:orientation="horizontal"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp">
+
+                                <RelativeLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/img_ri_7"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/image_ri_3"/>
+
+                                    <LinearLayout
+                                        android:layout_toEndOf="@+id/img_ri_7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_centerInParent="true">
+
+                                        <TextView
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/title_company_ri_1"
+                                            android:fontFamily="@font/red_hat_font_family"
+                                            android:textColor="@color/dark"
+                                            android:textSize="14sp"
+                                            android:textFontWeight="500"/>
+
+                                        <TextView
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="#GDS77822165555"
+                                            android:fontFamily="@font/red_hat_font_family"
+                                            android:textColor="@color/placeholder"
+                                            android:textSize="12sp"
+                                            android:textFontWeight="500"/>
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_weight="3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="01/10/2023"
+                                        android:fontFamily="@font/red_hat_font_family"
+                                        android:textColor="@color/placeholder"
+                                        android:textSize="12sp"
+                                        android:textFontWeight="500"
+                                        android:layout_centerInParent="true"/>
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

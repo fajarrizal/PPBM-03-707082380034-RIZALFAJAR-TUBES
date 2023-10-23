@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark">#06122B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#2B8FEB</color>
+    <color name="stroke_text">#88C1F4</color>
+    <color name="bg_edit_text">#ECF3FA</color>
+    <color name="placeholder">#818896</color>
+    <color name="canvas">#F9F9F9</color>
+</resources>

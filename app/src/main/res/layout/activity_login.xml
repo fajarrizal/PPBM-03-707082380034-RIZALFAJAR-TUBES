@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:background="@drawable/banner_top"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/icon_logo"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="700"
+                android:textSize="32sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:text="@string/title_login"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="500"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:text="@string/body_login"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:layout_marginTop="-5dp"
+                android:layout_gravity="center"/>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="false">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/email"
+                    android:hint="@string/hint_email"
+                    android:textColorHint="@color/placeholder"
+                    android:textColorHighlight="@color/dark"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="400"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:background="@drawable/et_style"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:layout_marginBottom="18dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="textPassword"
+                    android:id="@+id/password"
+                    android:hint="@string/hint_pass"
+                    android:textColorHint="@color/placeholder"
+                    android:textColorHighlight="@color/dark"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="400"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:background="@drawable/et_style"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawableEnd="@drawable/ic_eye"
+                    android:drawablePadding="10dp"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true">
+            
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_home"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/hint_login"
+                android:textColorHint="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="500"
+                android:background="@drawable/btn_style"
+                android:layout_marginBottom="18dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/hint_regis"
+                android:textColorHint="@color/primary"
+                android:textSize="16sp"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="500"
+                android:background="@color/white"/>
+
+
+        </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

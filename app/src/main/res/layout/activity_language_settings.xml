@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvas"
+    tools:context=".Language_Settings"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/language_header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+
+        <ImageView
+            android:id="@+id/link_back_home2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/red_hat_font_family"
+            android:textFontWeight="600"
+            android:textSize="22sp"
+            android:textColor="@color/dark"
+            android:text="@string/title_language"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/red_hat_font_family"
+            android:textFontWeight="700"
+            android:textSize="28sp"
+            android:textColor="@color/dark"
+            android:text="Select Language"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/red_hat_font_family"
+            android:textFontWeight="500"
+            android:textSize="18sp"
+            android:textColor="@color/placeholder"
+            android:text="Select below language to continue"/>
+    </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="68dp"
+              android:paddingLeft="12dp"
+              android:paddingRight="12dp"
+              android:paddingTop="8dp"
+              android:paddingBottom="8dp"
+              android:background="@color/white"
+              android:elevation="8dp">
+
+              <LinearLayout
+                  android:id="@+id/english"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:layout_alignParentTop="true"
+                  android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/usa_flag"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_us_flag"/>
+
+          <TextView
+              android:layout_marginLeft="10dp"
+              android:layout_width="160dp"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/red_hat_font_family"
+              android:textFontWeight="600"
+              android:textSize="18sp"
+              android:textColor="@color/dark"
+              android:text="English" />
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_alignParentEnd="true"
+                  android:layout_width="40dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true">
+
+                <RadioButton
+                    android:id="@+id/rbutton_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+              </LinearLayout>
+
+          </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@color/white"
+                android:elevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/indonesia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:id="@+id/idn_flag"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:src="@drawable/ic_idn_flag"/>
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/red_hat_font_family"
+                        android:textFontWeight="600"
+                        android:textSize="18sp"
+                        android:textColor="@color/dark"
+                        android:text="Indonesia" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+                    <RadioButton
+                        android:id="@+id/rbutton_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@color/white"
+                android:elevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/italia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:id="@+id/ita_flag"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:src="@drawable/ic_ita_flag"/>
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/red_hat_font_family"
+                        android:textFontWeight="600"
+                        android:textSize="18sp"
+                        android:textColor="@color/dark"
+                        android:text="Italia" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+                    <RadioButton
+                        android:id="@+id/rbutton_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@color/white"
+                android:elevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/france"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:id="@+id/fra_flag"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:src="@drawable/ic_fra_flag"/>
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/red_hat_font_family"
+                        android:textFontWeight="600"
+                        android:textSize="18sp"
+                        android:textColor="@color/dark"
+                        android:text="France" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+                    <RadioButton
+                        android:id="@+id/rbutton_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        </RadioGroup>
+</LinearLayout>

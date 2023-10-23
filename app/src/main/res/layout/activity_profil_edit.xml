@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvas"
+    android:orientation="vertical"
+    tools:context=".Input">
+
+    <RelativeLayout
+        android:id="@+id/edit_profile_header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+
+        <ImageView
+            android:id="@+id/link_back_profile"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/red_hat_font_family"
+            android:textFontWeight="600"
+            android:textSize="22sp"
+            android:textColor="@color/dark"
+            android:text="Edit Profile"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/red_hat_font_family"
+            android:textFontWeight="700"
+            android:textSize="28sp"
+            android:textColor="@color/dark"
+            android:text="Edit Informations"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/red_hat_font_family"
+            android:textFontWeight="500"
+            android:textSize="18sp"
+            android:textColor="@color/placeholder"
+            android:text="Don't forget to save"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="600"
+                    android:textSize="14sp"
+                    android:text="New Email"
+                    android:textColor="@color/dark"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/current_email"
+                    android:hint="Input email"
+                    android:textColorHint="@color/placeholder"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="400"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:background="@drawable/et_style"
+                    android:enabled="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="600"
+                    android:textSize="14sp"
+                    android:text="Phone Number"
+                    android:textColor="@color/dark"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="number"
+                    android:id="@+id/cellphone"
+                    android:hint="Input phone number"
+                    android:textColorHint="@color/placeholder"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="400"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:background="@drawable/et_style"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="600"
+                    android:textSize="14sp"
+                    android:text="New Password"
+                    android:textColor="@color/dark"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="textPassword"
+                    android:id="@+id/new_pass"
+                    android:hint="Input password"
+                    android:textColorHint="@color/placeholder"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="400"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:background="@drawable/et_style"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="600"
+                    android:textSize="14sp"
+                    android:text="Confirm Password"
+                    android:textColor="@color/dark"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="textPassword"
+                    android:id="@+id/confirm_pass"
+                    android:hint="Confimr password"
+                    android:textColorHint="@color/placeholder"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="400"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:background="@drawable/et_style"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_home"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Save"
+                android:textColorHint="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textFontWeight="500"
+                android:background="@drawable/btn_style"
+                android:layout_marginBottom="18dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
