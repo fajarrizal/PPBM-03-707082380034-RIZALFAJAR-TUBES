@@ -78,6 +78,18 @@
             android:textColor="@color/dark"
             android:lineHeight="28sp"
             android:text="The creator of this application is named Rizal Fajar (707082380034). This application was created to fulfill the assessment tasks of the PPBM course. This application has the theme of logistics delivery from a fictional delivery service called Goods, This application is intended for users of Goods company employees whose position is as a sender."/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_about_show_imgDev"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/btn_style"
+            android:text="Show Dev"
+            android:fontFamily="@font/red_hat_font_family"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="16sp"/>
     </LinearLayout>
 
 </LinearLayout>

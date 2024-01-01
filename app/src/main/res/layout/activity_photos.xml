@@ -31,7 +31,7 @@
         android:textFontWeight="600"
         android:textSize="22sp"
         android:textColor="@color/dark"
-        android:text="@string/title_photos"
+        android:text="News"
         android:gravity="center"/>
     </RelativeLayout>
 
@@ -50,7 +50,7 @@
             android:textFontWeight="700"
             android:textSize="28sp"
             android:textColor="@color/dark"
-            android:text="Photos List"/>
+            android:text="News List"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -58,65 +58,19 @@
             android:textFontWeight="500"
             android:textSize="18sp"
             android:textColor="@color/placeholder"
-            android:text="Your photos"/>
+            android:text="Just bunch of news"/>
     </LinearLayout>
 
-    <ScrollView
+    <ListView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/header_bar_cs_lv"
+        android:id="@+id/custom_list_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:layout_marginTop="32dp"
-        android:scrollbars="none">
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/custom_list_view"
+        android:dividerHeight="1dp"
+        android:divider="@color/placeholder"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-        <ImageView
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/photos_1"/>
-
-            <ImageView
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/photos_2"/>
-
-            <ImageView
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/photos_3"/>
-
-            <ImageView
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/photos_4"/>
-
-            <ImageView
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/photos_1"/>
-
-            <ImageView
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/photos_6"/>
-
-        </LinearLayout>
-    </ScrollView>
 
 </LinearLayout>

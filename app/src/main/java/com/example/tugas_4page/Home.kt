@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import com.denzcoskun.imageslider.ImageSlider
+import com.denzcoskun.imageslider.constants.ScaleTypes
+import com.denzcoskun.imageslider.models.SlideModel
 
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,5 +45,20 @@ class Home : AppCompatActivity() {
             val intent = Intent(this, About::class.java)
             startActivity(intent)
         }
+        val imageView7 = findViewById(R.id.bell_notify) as ImageView
+        imageView7.setOnClickListener {
+            val intent = Intent(this, Notification::class.java)
+            startActivity(intent)
+        }
+
+
+        val imageList = ArrayList<SlideModel>() // Create image list
+
+        imageList.add(SlideModel(R.drawable.banner_home_top_1, ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.banner_home_top_2, ScaleTypes.FIT))
+
+        val imageSlider = findViewById<ImageSlider>(R.id.home_banner_slider)
+        imageSlider.setImageList(imageList)
+        imageSlider.startSliding(3000)
     }
 }

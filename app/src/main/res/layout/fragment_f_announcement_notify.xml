@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tablayout_fragment.F_announcement_notify"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Empty Announcement"
+        android:textSize="24sp"
+        android:textColor="@color/placeholder"
+        android:fontFamily="@font/red_hat_font_family"
+        android:textFontWeight="600"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+
+
+</LinearLayout>

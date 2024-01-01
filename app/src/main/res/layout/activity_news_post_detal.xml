@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".News_post_detal"
+    android:orientation="vertical"
+    android:background="@color/canvas">
+
+    <RelativeLayout
+        android:id="@+id/photos_header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+
+        <ImageView
+            android:id="@+id/link_back_news"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/red_hat_font_family"
+            android:textFontWeight="600"
+            android:textSize="22sp"
+            android:textColor="@color/dark"
+            android:text="Detail Post"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/isi_custom_lv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/isi_lv_cs_image_detail"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@mipmap/ic_launcher"/>
+
+            <LinearLayout
+                android:layout_toEndOf="@+id/isi_lv_cs_image_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/isi_lv_cs_title_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textFontWeight="700"
+                    android:textSize="24sp"
+                    android:text="Ini titlenya"
+                    android:textColor="@color/dark"/>
+
+                <TextView
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/waktu_posting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/red_hat_font_family"
+                    android:textSize="18sp"
+                    android:text="Yesterday at 11:00 AM"
+                    android:textColor="@color/placeholder"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/isi_custom_lv_content"
+            android:id="@+id/isi_container_lv_cs_desc"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/isi_lv_cs_desc_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/red_hat_font_family"
+                android:textSize="16sp"
+                android:text="Ini deskripsi"
+                android:textColor="@color/dark"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/isi_container_lv_cs_desc"
+            android:id="@+id/isi_container_gambar"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/isi_gambar_lv_cs_detail"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/placeholder"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

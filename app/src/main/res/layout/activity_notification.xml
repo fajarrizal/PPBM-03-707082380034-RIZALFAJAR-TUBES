@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvas"
+    tools:context=".Notification"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/notif_header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+
+        <ImageView
+            android:id="@+id/link_notif_back_home"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/red_hat_font_family"
+            android:textFontWeight="600"
+            android:textSize="22sp"
+            android:textColor="@color/dark"
+            android:text="Notification"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayouttop"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        app:tabMode="fixed"
+        app:tabIndicatorGravity="stretch"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/dark"
+        app:tabIndicatorColor="@null"
+        app:tabIndicator="@drawable/tab_custom"
+        app:tabIndicatorFullWidth="true"
+        app:tabTextAppearance="@style/CustomTabText"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/content_view_pager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
